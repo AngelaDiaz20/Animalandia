@@ -1,0 +1,1132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+	--dark-color:#191919;
+	--white-color:#FFFFFF;
+	--purple-color:rgb(117,41,149);
+	--blue-color:#00B2B1;
+	--gray-color:#828282;
+	--ligh-color:#F3F3F3;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--purple-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: center;
+}
+
+/*Estilos Home*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+.b-azul{
+    background: linear-gradient(#00b2b1, #016e6e);
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.b-azul:hover{   
+    background: linear-gradient(#016e6e, #00b2b1 );
+    transition: all 1s ease 1s;
+}
+
+.b-morado{
+    background-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--purple-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--purple-color);
+}
+
+.b-morado:hover{   
+    background-color: var(--purple-color);
+    color: var(--white-color);
+}
+
+
+
+.botones i{
+    margin-right: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--purple-color);  
+}
+
+.item{
+    padding: 10px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.item:hover{
+    color: rgb(255, 255, 255, 0.4);
+    transition: transform;
+}
+
+#agenda{
+    display: flex;
+    margin-top: 0.2rem;
+}
+
+.cita{
+    flex-basis: 70%;
+    background-image: url(../img/fondo.jpg);
+    padding: 2rem;
+}
+
+.cita h1{
+    color: var(--dark-color);
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.cita h3{
+    color: var(--dark-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.promocion{
+    flex-basis: 30%;
+    background-color: var(--purple-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.promocion h1{
+    color: var(--white-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.promocion img{
+    border-radius: 50%;
+    border: 7px solid var(--dark-color);
+}
+
+.tseccion{
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px var(--dark-color);
+    font-size: 32px;
+}
+
+#servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio{
+    margin: 10px;
+    text-align: center;
+}
+
+.servicio img{  
+    max-width: 200px;
+    width: 100%;
+}
+
+footer{
+    background-image: url(../img/fondo.jpg);
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(117, 41, 149, 0.404);
+}
+
+.foot{
+    text-align: center;
+}
+
+.foot h3 {
+    color: var(--white-color);
+}
+
+.foot p {
+    color: var(--white-color);
+    text-align: start;
+}
+
+
+/*equipo*/
+
+.twseccion{
+    text-shadow: 0 2px 3px var(--gray-color);
+    text-align: center;
+}
+
+#banner img{
+    width: 100%;
+}
+ 
+#equipo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+.persona img{  
+    border-radius: 50%;
+    max-width: 150px;
+    width: 100%;
+}
+
+.persona p{ 
+    text-align: center;
+}
+
+#equipo h3{
+    text-shadow: 0 1px 4px var(--gray-color);
+    margin: 1px 0;
+    font-size: 21px;
+}
+
+#equipo div{
+    text-align: center;
+    max-width: 60%;
+}
+
+.especialidad{
+    color: var(--dark-color);
+}
+
+/*Servicios*/
+
+#services{
+    display: flex;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service{
+    display: flex;
+    margin: 0 15px 0 0;
+    align-items: center;
+    flex-basis: 45%;
+}
+
+.img-service img{
+    margin-right: 1em;
+    width: 150px;
+}
+
+.service h3{
+    color: var(--dark-color);
+    font-size:24px;
+}
+
+.service p{
+    text-align: justify;
+}
+
+/*contacto*/
+
+
+h3{
+    text-align: center;
+}
+
+#map{
+    display: flex;
+    padding: 0px 40px;
+}
+
+.mapa{
+    display: flex;
+    width: 100%;
+}
+
+.mapa iframe{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid rgb(117,41,149); 
+    border-radius: 10px;
+}
+
+/*------------------------------------------------*/
+#contact{
+    padding: 0px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-contacto h3{
+    color: var(--dark-color);
+}
+
+span, .men{
+    color: var(--purple-color);
+}
+
+.info-contacto{
+    padding:20px 40px;
+    width: 400px;
+    min-width: 200px;
+    margin: 5px 0;
+}
+
+.info-contacto h3{
+    font-size: 22px;
+}
+
+.info{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.info p{
+    text-align: justify;
+    margin: 1px;
+}
+
+.info img{
+    margin-right: 20px;
+    width: 60px;
+}
+
+.form-contacto{
+    padding: 20px;
+    width: 700px;
+    min-width: 400px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    height: 350px;
+    background-color: rgba(117, 41, 149, 0.514);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--gray-color);
+}
+
+/*---------------------------------------------*/
+
+input, textarea{
+    border-radius: 5px;
+    border: 1px solid var(--purple-color);
+    color: rgba(117, 41, 149, 0.87);
+    box-shadow: 0px 2px 3px var(--gray-color);
+    margin-bottom: 70px;
+}
+
+input{
+    height: 35px;
+}
+
+input::placeholder{
+    color: rgba(117, 41, 149, 0.87);
+}
+
+.message{
+    color: #191919;
+}
+
+.bton-form{
+    border-radius: 8px;
+    border: 7px double white;
+    background-color: var(--purple-color);
+    color: #FFFFFF;
+    width: 40%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.bton-form:hover{
+    background-color: #00b2b293;
+    font-weight: bold;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-user{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-user div{
+    width: 100%;
+}
+
+#nombre{
+    margin-right: 10px;
+}
+
+.bton{
+    text-align: center;
+}
+
+/*Tips de mascotas*/
+
+
+
+#doggy img{
+    width: 30%;
+}
+
+.bg{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    background: url(../img/doggy.svg);
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-size: cover;
+    justify-content: end; 
+}
+
+.bg div{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 10px;
+    margin: 20px 40px;
+    max-width: 400px;
+    flex-direction: column;
+    padding: 30px;
+    cursor:pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+#doggy a{
+    text-decoration: none;
+}
+
+#doggy div:hover{
+    background-color: rgba(117, 41, 149, 0.795);
+}
+
+#doggy p{
+    color: var(--white-color);
+}
+
+#doggy span{
+    color: wheat;
+}
+
+.bg-cat{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    background: url(../img/cat.png);
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-size: cover;
+    cursor:pointer; 
+}
+
+.bg-cat div{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 10px;
+    margin:20px 40px;
+    max-width: 400px;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+
+/*Tips perritos*/
+
+#container-all{
+    max-width: 1300px;
+    padding-top: 100px;
+}
+
+.container-box, .container-box-michis{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-size: contain;
+}
+
+.container-box{
+    background-image: url(../img/tips/dog-bg.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: bottom;
+}
+
+.container-box a, .container-box-michis a{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+
+.box0, .box1, .box2, .box3{
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0 0 20px 20px;
+    background: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; /*cambia la flecha del cursor a una manita*/
+    transition: all 300ms;
+    border-radius: 5px;
+    box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.226);
+}
+
+.box0:hover, .box1:hover, .box2:hover, .box3:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px rgba(78, 17, 17, 0.623);
+}
+
+.box0 h4, .box0 p, .box1 h4, .box1 p, .box2 h4, .box2 p, .box3 h4, .box3 p{
+    position: relative;
+    z-index: 1; /*Que se mantenga por encima del recuadro rojo*/
+    transition: all 200ms;
+}
+
+.box0 h4, .box0 p, .box1 h4, .box1 p, .box2 h4, .box2 p, .box3 h4, .box3 p{
+    margin-top: 10px;
+}
+
+.box0 h4, .box1 h4, .box2 h4, .box3 h4{
+    margin-top: 40px;
+    padding: 20px 5px 5px;
+    font-size: 30px;
+    transform: translateY(87px);
+    color: #ffffff;
+    text-shadow: 10px 10px 20px rgb(107, 102, 102);;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0));
+}
+
+.box0:hover h4, .box1:hover h4, .box2:hover h4, .box3:hover h4{
+    transform: translateY(0);
+    padding:5px;
+    background: #19191941;
+}
+
+.box0 p, .box1 p, .box2 p, .box3 p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+    margin: 15px 20px;
+}
+
+.box0:hover p, .box1:hover p, .box2:hover p, .box3:hover p{
+    transform: translate(0);
+    opacity: 1;
+    color: white;
+}
+
+.box0 .background-hover, .box1 .background-hover, .box2 .background-hover, .box3 .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left:-200px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgba(38, 0, 255, 0.507), rgba(255, 0, 0, 0.527));
+}
+
+.box0:hover .background-hover, .box1:hover .background-hover, .box2:hover .background-hover, .box3:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+.box0{
+    background-image: url(../img/tips/dog-alimentation.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+}
+
+.box1{
+    background-image: url(../img/tips/dog-shower.png);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+   }
+
+.box2{
+    background-image: url(../img/tips/dog-play.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+}
+
+.box3{
+    background-image: url(../img/tips/dog-wal.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+}
+
+#banner h1{
+    text-align: center;
+}
+
+.imbanner{
+    padding: 0 40px;
+}
+
+#sabias{
+    padding: 5px 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#sabias img{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.tip{
+    background-color: var(--purple-color);
+    border: 5px double var(--white-color);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 3px var(--gray-color);
+    justify-content: center;
+}
+
+.tip p{
+    color: var(--white-color);
+    text-align: justify;
+    width: 90%;
+}
+
+.container-cards, .container-cards-michis{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 520px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid var(--blue-color);
+}
+
+.card p{
+    text-align: justify;
+}
+
+.title-card{
+    height: 70px;
+    padding: 0 20px;
+}
+
+.info-card{
+    height: 180px;
+    padding: 0 20px;
+}
+
+.card h5{
+    margin: 5px 0;
+}
+
+.card h4{
+    margin: 5px 0;
+    color: var(--purple-color);
+    font-weight: bold;
+}
+
+.card img{
+    width: 300px;
+}
+
+.card:hover{
+    transform: translate(3px, -3px);
+    box-shadow: -5px 5px 10px rgba(78, 17, 17, 0.623);
+    transition-duration: 0.3s;
+    background-color: #00b2b215;
+}
+
+#cont-cards .card:hover h4{
+    font-size: 18px;
+}
+
+#cont-cards{
+    text-align: center;
+}
+
+#dog-feeding #banner{
+    background:linear-gradient(to right, #00B2D1, #AC7FBF);
+}
+
+#tips-feeding{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#art-destac{
+    text-align: center;
+}
+
+#art-destac .container-cards, .container-cards-michis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#art-destac .card{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 160px;
+    width: 400px;
+    border: 1px solid var(--blue-color);
+    background-color: #ac7fbf50;
+    align-items: center;
+    padding-right:10px ;
+}
+
+#art-destac .info-card{
+    height: 180px;
+    padding: 0 10px;
+}
+
+#art-destac .card img{
+    width: 200px;
+    height: 160px;
+    margin-right: 10px;
+}
+
+#art-destac .card:hover{
+    transform: translate(3px, -3px);
+    box-shadow: -5px 5px 10px rgba(78, 17, 17, 0.623);
+    transition-duration: 0.3s;
+    background-color: #00b2b215;
+}
+
+.card-h5 {
+    width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card-h4 {
+    width: 100%;
+}
+
+.card-h5 h5 {
+    margin: 0;
+    padding: 0 80px 0 0;
+    color: var(--blue-color);
+}
+
+.card-h4 h4 {
+    font-size: 16px;
+}
+
+#articles-feeding{
+    width: 65%;
+    text-align: center;
+}
+
+#articles-feeding .artic{
+    border-bottom: 5px dotted var(--purple-color);
+    padding: 0 10px;
+}
+
+#articles-feeding p{
+    text-align: justify;
+}
+
+.consulta{
+    background-color: #ac7fbf21;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow:2px 2px 3px var(--gray-color);
+}
+
+/*Login*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);    
+}
+
+p{
+    text-align: justify;
+}
+
+#login{ /*id da estilo solo a la sección, sin contar clases internas*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-login h1{
+    text-align: center;
+}
+
+.form-login i{
+    color: var(--purple-color);
+    background-color: var(--white-color);
+    padding: 1rem 0.8rem;
+    border-radius: 100%;
+    border: 4px solid var(--gray-color);
+}
+
+.form-login{
+    margin-top: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 2px var(--dark-color);
+    background-color: var(--light-color);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.form-login a{
+    text-decoration: none;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-input{
+    border: 3px solid var(--gray-color);
+    padding: 0.5rem;
+    outline: none;
+}
+
+.form-input:focus{
+    border: 3px solid var(--purple-color);
+}
+
+.form-input::placeholder{
+    font-size: 00.8rem;
+}
+
+.bton-azul, .bton-morado{
+    padding: 0.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--white-color);
+    text-align: center;
+}
+
+
+.bton-azul{
+    background-color: var(--blue-color);
+}
+
+.bton-morado{
+    background-color: var(--purple-color);
+}
+
+.form-olvido{
+    text-align: center;
+    color: var(--blue-color);
+    font-size: 0.9rem;
+}
+
+/*Dashboard------------------------------------------------------------*/
+
+/*estilos dashboard*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.sesion{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    color: var(--purple-color);
+
+
+}
+.sesion a{
+    color: var(--purple-color);
+    text-decoration: none;
+}
+
+.sesion img{
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--purple-color);
+}
+
+#dashboard{
+    display: flex;
+}
+
+.menuone{
+    flex-basis: 20%;
+    background-color: var(--dark-color);
+    height: 100vh;
+}
+
+.menuone ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuone a{
+    color:var(--ligh-color);
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+
+.menuone a:hover{
+    background-color: var(--purple-color);
+    border-left: 3px solid var(--white-color);
+    padding-left: 50px;
+    transition: all 2s;
+    color: var(--dark-color);
+}
+
+.menuone i{
+    margin: 5px
+}
+
+.contenido{
+    flex-basis: 80%;
+    background-color: var(--ligh-color);
+    padding: 30px;
+}
+
+/*estilos productos*/
+.logo a{
+    text-decoration: none;
+    color: var(--purple-color);
+}
+
+.tablaintro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tablaintro img{
+    max-width: 100px;
+}
+
+.tablaintro h1{
+color: var(--dark-color);
+font-family: 'Roboto',sans-serif;
+}
+
+.tablaintro a{
+    border-radius: 5%;
+}
+
+.frmbusqueda{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.frmbusqueda input[type="text"]{
+flex-basis: 80%;
+padding: 10px;
+border: 2px solid var(--dark-color);
+}
+
+.frmbusqueda button{
+    flex-basis: 20%;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+table{
+    width: 100%;
+    border: 2px solid var(--dark-color);
+    border-collapse: collapse;
+}
+
+table th{
+    border: 2px solid var(--dark-color);
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    padding: 7px 0;
+}
+
+table td{
+    border: 2px solid var(--dark-color);
+    text-align: center;
+    
+}
+
+.formproducto{
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Lato' ,sans-serif;
+}
+
+.formproducto label{
+    color: var(--dark-color);
+}
+
+.formproducto select{
+    color: var(--gray-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.formproducto input[type="submit"]{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+} 
+
+
+/*Tips michis---------------------------------------------------------*/
+
+.container-box-michis .box0{
+    background-image: url(../img/tips/cat-alimentation.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+}
+
+.container-box-michis .box1{
+    background-image: url(../img/tips/cat-shower.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+   }
+
+.container-box-michis .box2{
+    background-image: url(../img/tips/cat-play.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+}
+
+.container-box-michis .box3{
+    background-image: url(../img/tips/cat-hungry.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #ac7fbfb7;
+    backdrop-filter: blur(5px);
+}
+
+.container-box-michis{
+    background-image: url(../img/tips/bg-michis.jpg);
+}
+
+#cont-cards-michis img{
+    height: 160px;
+    width: 298px;
+}
+
+#cont-cards-michis li{
+    text-align: left;
+}
+
+#cont-cards-michis a{
+    margin-top: 40px;
+    background-color: #00b2b1;
+}
+
+/*categorías michis*/

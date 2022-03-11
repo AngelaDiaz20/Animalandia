@@ -54,6 +54,7 @@ header{
     padding: 0.5rem 1rem;
     cursor: pointer;
     color: var(--white-color);
+    margin: 5px;
 }
 
 .b-azul:hover{   
@@ -70,6 +71,7 @@ header{
     padding: 0.5rem 1rem;
     cursor: pointer;
     color: var(--purple-color);
+    margin: 5px;
 }
 
 .b-morado:hover{   
@@ -77,10 +79,14 @@ header{
     color: var(--white-color);
 }
 
-
-
 .botones i{
     margin-right: 5px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav{
@@ -841,6 +847,19 @@ p{
     height: 100vh;
 }
 
+#login .bton-azul:hover{
+    background-color: #026e99;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px var(--dark-color);
+}
+
+#login .bton-morado:hover{
+    background-color:#7904ac;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px var(--dark-color);
+}
+
+
 .form-login h1{
     text-align: center;
 }
@@ -929,9 +948,16 @@ header{
     text-align: right;
     align-items: center;
     color: var(--purple-color);
-
-
 }
+
+.sesion:hover{
+    background-color: #ac7fbf79;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 2px 3px var(--dark-color);
+    transition-duration: 0.5s;
+}
+
 .sesion a{
     color: var(--purple-color);
     text-decoration: none;
@@ -942,6 +968,11 @@ header{
     width: 100%;
     border-radius: 50%;
     border: 3px solid var(--purple-color);
+}
+
+.logo-animal:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 
 #dashboard{
@@ -1049,23 +1080,23 @@ table td{
     
 }
 
-.formproducto{
+.form-producto{
     max-width: 800px;
     margin: 0 auto;
     font-family: 'Lato' ,sans-serif;
 }
 
-.formproducto label{
+.form-producto label{
     color: var(--dark-color);
 }
 
-.formproducto select{
+.form-producto select{
     color: var(--gray-color);
     font-size: 1rem;
     font-weight: bold;
 }
 
-.formproducto input[type="submit"]{
+.form-producto input[type="submit"]{
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 1rem;
@@ -1126,7 +1157,6 @@ table td{
 
 #cont-cards-michis a{
     margin-top: 40px;
-    background-color: #00b2b1;
 }
 
 /*categorías michis*/

@@ -112,7 +112,6 @@ nav{
 }
 
 .cita{
-    flex-basis: 70%;
     background-image: url(../img/fondo.jpg);
     padding: 2rem;
 }
@@ -131,7 +130,6 @@ nav{
 }
 
 .promocion{
-    flex-basis: 30%;
     background-color: var(--purple-color);
     text-align: center;
     padding: 2rem;
@@ -355,7 +353,7 @@ span, .men{
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
-    height: 350px;
+    height: 400px;
     background-color: rgba(117, 41, 149, 0.514);
     border-radius: 5px;
     box-shadow: 3px 3px 3px var(--gray-color);
@@ -415,7 +413,11 @@ input::placeholder{
 }
 
 #nombre{
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+#correo{
+    margin-left: 5px;
 }
 
 .bton{
@@ -1159,4 +1161,157 @@ table td{
     margin-top: 40px;
 }
 
-/*categorías michis*/
+/*Resolución Celulares*/
+@media screen and (min-width:360px){
+    header{
+        flex-direction: column;
+        background-color: #492649;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    #agenda{
+        flex-direction: column;
+    }
+
+    #servicios{
+        flex-direction: column;
+    }
+    
+    .cita{
+        flex-basis: 50%;
+    }
+    .promocion{
+        flex-basis: 50%;
+    }
+    .promocion img{
+        max-width: 100px;
+        width:70%;
+    }
+
+    .box-footer{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #equipo{
+        flex-direction: column;
+    }
+
+    #services{
+        flex-direction: column;
+    }
+
+    .service{
+        flex-direction: column;
+    }
+
+    .form-user{
+        flex-direction: column;
+    }
+
+    #nombre, #correo{
+        margin: 0;
+    }
+
+}
+
+/*Resolución tabletas*/
+@media screen and (min-width:768px){
+    header{
+        flex-direction: row;
+        background-color: #7904ac;
+    }
+
+    #agenda{
+        flex-direction: row;
+    }
+    
+    .cita{
+        flex-basis: 50%;
+    }
+    .promocion{
+        flex-basis: 50%;
+    }
+    .promocion img{
+        max-width: 300px;
+        width:70%;
+    }
+    .box-footer{
+        align-items: center;
+        flex-direction: row;
+    }
+    #equipo{
+        flex-direction: row;
+    }
+
+    .service{
+        flex-direction: row;
+    }
+}
+
+
+/*Resolución resoluciones medias*/
+@media screen and (min-width:1024px){
+    header{
+        background-color: yellowgreen;
+    }
+
+    nav{
+        flex-direction: row;
+    }
+
+    .cita{
+        flex-basis: 60%;
+    }
+
+    .promocion{
+        flex-basis: 40%;
+    }
+    .promocion img{
+        max-width: 300px;
+        width:60%;
+    }
+    #servicios{
+        flex-direction: row;
+    }
+    
+    #services{
+        flex-direction: row;
+    }
+
+    .form-user{
+        flex-direction: row;
+    }
+
+    .form{
+        height: 350px;
+    }
+
+    #nombre{
+        margin-right: 5px;
+    }
+
+    #correo{
+        margin-left: 5px;
+    }
+}
+
+
+/*Resolución resoluciones macro*/
+@media screen and (min-width:1200px){
+    .cita{
+        flex-basis: 70%;
+    }
+    .promocion{
+        flex-basis: 30%;
+    }
+    .promocion img{
+        max-width: 300px;
+        width:70%;
+    }
+}
+
+
